@@ -45,9 +45,12 @@
                                             <constraint firstAttribute="width" constant="70" id="u53-9L-2zq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Add">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rev-Qz-CtB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -76,9 +79,12 @@
                                                         <constraint firstAttribute="width" constant="70" id="scz-na-c0h"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <state key="normal" title="Button">
+                                                    <state key="normal" title="Delete">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="onClickDeleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2b0-95-ec3"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -93,6 +99,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Mm9-Ps-QcV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="riH-gf-bag"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -109,6 +119,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="p7U-If-F4h" id="UaI-r2-sDb"/>
+                        <outlet property="txtField" destination="gBw-VJ-zlb" id="4UO-NE-k80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
