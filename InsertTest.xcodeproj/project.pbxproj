@@ -14,6 +14,7 @@
 		4246AC1E23EA0CA100F6ACE3 /* InsertTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4246AC1C23EA0CA100F6ACE3 /* InsertTest.xcdatamodeld */; };
 		4246AC2023EA0CA200F6ACE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4246AC1F23EA0CA200F6ACE3 /* Assets.xcassets */; };
 		4246AC2323EA0CA200F6ACE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4246AC2123EA0CA200F6ACE3 /* LaunchScreen.storyboard */; };
+		4246AC2B23EA103600F6ACE3 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246AC2A23EA103600F6ACE3 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4246AC1F23EA0CA200F6ACE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4246AC2223EA0CA200F6ACE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4246AC2423EA0CA200F6ACE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4246AC2A23EA103600F6ACE3 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				4246AC1323EA0CA100F6ACE3 /* AppDelegate.swift */,
 				4246AC1523EA0CA100F6ACE3 /* SceneDelegate.swift */,
+				4246AC2A23EA103600F6ACE3 /* CustomTableViewCell.swift */,
 				4246AC1723EA0CA100F6ACE3 /* ViewController.swift */,
 				4246AC1923EA0CA100F6ACE3 /* Main.storyboard */,
 				4246AC1F23EA0CA200F6ACE3 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4246AC1E23EA0CA100F6ACE3 /* InsertTest.xcdatamodeld in Sources */,
+				4246AC2B23EA103600F6ACE3 /* CustomTableViewCell.swift in Sources */,
 				4246AC1823EA0CA100F6ACE3 /* ViewController.swift in Sources */,
 				4246AC1423EA0CA100F6ACE3 /* AppDelegate.swift in Sources */,
 				4246AC1623EA0CA100F6ACE3 /* SceneDelegate.swift in Sources */,
