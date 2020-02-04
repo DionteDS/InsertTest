@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadItems()
+        loadData()
         
     }
     
@@ -42,6 +42,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onClickDeleteButton(_ sender: UIButton) {
+        
+        let point = sender.convert(CGPoint.zero, to: tableView)
+        
+        guard let indexPath = tableView.indexPathForRow(at: point) else { return }
+        
+        tableView.beginUpdates()
+        context.delete(stringArr[indexPath.row])
+        stringArr.remove(at: indexPath.row)
+        tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .automatic)
+        saveItems()
+        tableView.endUpdates()
     }
     
     
@@ -62,6 +73,16 @@ class ViewController: UIViewController {
         } catch {
             print("Error fetching request, \(error)")
         }
+        
+    }
+    
+    func loadData(with request: NSFetchRequest<Item> = Item.fetchRequest()) {
+        
+        let sort: NSSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        
+        request.sortDescriptors = [sort]
+        
+        loadItems(with: request)
         
     }
     
